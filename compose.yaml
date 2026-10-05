@@ -3,7 +3,7 @@ services:
     image: postgis/postgis:18-3.6
 
     environment:
-      POSTGRES_DB: Terraforge
+      POSTGRES_DB: terraforge
       POSTGRES_USER: LOCAL_DB_USER
       POSTGRES_PASSWORD: LOCAL_DB_PASSWORD
 
@@ -19,7 +19,7 @@ services:
       - app-network
 
     healthcheck:
-      test: ["CMD", "pg_isready", "-U", "LOCAL_DB_USER", "-d", "Terraforge"]
+      test: ["CMD", "pg_isready", "-U", "LOCAL_DB_USER", "-d", "terraforge"]
       interval: 30s
       timeout: 10s
       retries: 3

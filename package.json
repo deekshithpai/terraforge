@@ -17,5 +17,12 @@
       "onFail": "download"
     }
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^18.0.5",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.23.1"
+  }
 }
