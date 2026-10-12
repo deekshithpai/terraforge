@@ -19,7 +19,7 @@ services:
       - app-network
 
     healthcheck:
-      test: ["CMD", "pg_isready", "-U", "LOCAL_DB_USER", "-d", "terraforge"]
+      test: ["CMD", "pg_isready", "-U", "LOCAL_DB_USER", "-d", "Terraforge"]
       interval: 30s
       timeout: 10s
       retries: 3
